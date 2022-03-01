@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "fegs"
+version = "0.1.0"
+description = "Algorithms implemented in Python for paper: 'Mu, Z., Yu, T., Liu, X. et al. FEGS: a novel feature extraction model for protein sequences and its applications. BMC Bioinformatics 22, 297 (2021). https://doi.org/10.1186/s12859-021-04223-3' (https://rdcu.be/cHZHY)"
+authors = ["wangmeng <wangmeng@icarbonx.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+scipy = "^1.8.0"
+numpy = "^1.22.2"
+bio = {version = "^1.3.3", optional = true}
+pandas = {version = "^1.4.1", optional = true}
+typer = {version = "^0.4.0", optional = true}
+tqdm = {version = "^4.63.0", optional = true}
+
+
+[tool.poetry.dev-dependencies]
+
+[[tool.poetry.source]]
+name = "china"
+url = "https://mirrors.aliyun.com/pypi/simple"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
